@@ -39,6 +39,7 @@ An advanced AI-driven platform designed to simulate human-like conversations. Us
 
 * User can chat with additional personalities
 * User can speak to the chat box to have an actual conversation
+* User can have a conversation where the chat box speaks back
 
 ### 2. Screen Archetypes
 
