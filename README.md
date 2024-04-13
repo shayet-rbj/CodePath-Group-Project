@@ -1,4 +1,5 @@
 # ChatterBox
+[Resource](https://docs.google.com/document/d/1UNtnhYsL28XQtCY7L-tBb_mXvZoPy5n5TDcscAWS_jI/edit?usp=sharing)
 
 ## Table of Contents
 
