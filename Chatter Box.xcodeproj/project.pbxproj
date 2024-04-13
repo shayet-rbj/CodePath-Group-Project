@@ -52,7 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				67522AA72BCB0277003572B9 /* Chatter_BoxApp.swift */,
-				67522AA92BCB0277003572B9 /* ContentView.swift */,
+				67A624E32BCB09EE00ACE5DD /* View */,
+				67A624E42BCB09F500ACE5DD /* ViewModel */,
+				67A624E52BCB09FE00ACE5DD /* Model */,
 				67522AAB2BCB027A003572B9 /* Assets.xcassets */,
 				67522AAD2BCB027A003572B9 /* Preview Content */,
 			);
@@ -65,6 +67,28 @@
 				67522AAE2BCB027A003572B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67A624E32BCB09EE00ACE5DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67522AA92BCB0277003572B9 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67A624E42BCB09F500ACE5DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67A624E52BCB09FE00ACE5DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
