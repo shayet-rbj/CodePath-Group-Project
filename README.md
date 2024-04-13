@@ -104,3 +104,12 @@ An advanced AI-driven platform designed to simulate human-like conversations. Us
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
+## Sprint 
+
+### Sprint 1 
+- [] [Login and Signup Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/2)
+- [] [ChatScreen Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/3)
+- [] [Dashboard Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/4)
+
