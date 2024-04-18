@@ -13,6 +13,7 @@
 		4D7213E42BD0FD4D00287A24 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7213E32BD0FD4D00287A24 /* FirebaseFirestoreSwift */; };
 		4D7213E62BD0FF0700287A24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7213E52BD0FF0700287A24 /* LoginView.swift */; };
 		4D7213E82BD1033700287A24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7213E72BD1033700287A24 /* Color.swift */; };
+		4D7213EC2BD1189F00287A24 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7213EB2BD1189F00287A24 /* SignUpView.swift */; };
 		67522AA82BCB0277003572B9 /* Chatter_BoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67522AA72BCB0277003572B9 /* Chatter_BoxApp.swift */; };
 		67522AAA2BCB0277003572B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67522AA92BCB0277003572B9 /* ContentView.swift */; };
 		67522AAC2BCB027A003572B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67522AAB2BCB027A003572B9 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		4D7213D12BD0FCD300287A24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D7213E52BD0FF0700287A24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D7213E72BD1033700287A24 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4D7213EB2BD1189F00287A24 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		67522AA42BCB0277003572B9 /* Chatter Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chatter Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67522AA72BCB0277003572B9 /* Chatter_BoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatter_BoxApp.swift; sourceTree = "<group>"; };
 		67522AA92BCB0277003572B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				67522AA92BCB0277003572B9 /* ContentView.swift */,
 				4D7213E52BD0FF0700287A24 /* LoginView.swift */,
+				4D7213EB2BD1189F00287A24 /* SignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D7213E62BD0FF0700287A24 /* LoginView.swift in Sources */,
+				4D7213EC2BD1189F00287A24 /* SignUpView.swift in Sources */,
 				4D7213E82BD1033700287A24 /* Color.swift in Sources */,
 				67522AAA2BCB0277003572B9 /* ContentView.swift in Sources */,
 				67522AA82BCB0277003572B9 /* Chatter_BoxApp.swift in Sources */,
