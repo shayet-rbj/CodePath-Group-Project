@@ -17,7 +17,8 @@ struct Chatter_BoxApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+//            LoginView()
+            DashboardView()
         }
     }
 }
