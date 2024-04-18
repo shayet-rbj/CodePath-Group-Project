@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct Chatter_BoxApp: App {
+    
+    init() { // <-- Add an init
+            FirebaseApp.configure() // <-- Configure Firebase app
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
