@@ -14,35 +14,82 @@ struct LoginView: View {
 
     var body: some View {
         VStack {
-            Text("Welcome!")
+            Image("ChatGPT-logo")
+                  .resizable()
+                  .aspectRatio(contentMode: .fit)
+                  .frame(maxWidth: 60, maxHeight: 60)
+            Text("Log in")
                 .font(.largeTitle)
+                .foregroundStyle(.white)
 
             // Email + password fields
             VStack {
-                TextField("Email", text: $email)
-                SecureField("Password", text: $password)
+                TextField("",
+                                  text: $email,
+                                  prompt: Text("Email")
+                                            .foregroundColor(Color(hex: "#92979f"))
+                        )
+                .padding(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(hex: "#42434d"), lineWidth: 1)
+                            .frame(height: 35)
+                    )
+                    .foregroundStyle(.white)
+                    .tint(.white)
+                    .background(Color(hex: "#42434d"))
+                    .cornerRadius(8)
+                
+                SecureField("",
+                                  text: $password,
+                                  prompt: Text("Password")
+                                            .foregroundColor(Color(hex: "#92979f"))
+                        )
+                .padding(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(hex: "#42434d"), lineWidth: 1)
+                            .frame(height: 35)
+                    )
+                    .foregroundStyle(.white)
+                    .tint(.white)
+                    .background(Color(hex: "#42434d"))
+                    .cornerRadius(8)
             }
-            .textFieldStyle(.roundedBorder) // <-- Style text fields (applies to both text fields within the VStack)
             .textInputAutocapitalization(.never) // <-- No auto capitalization (can be annoying for emails and passwords)
-            .padding(40)
+            .padding(20)
+            
+            Button {
+                print("Log in user: \(email), \(password)")
+                // TODO: Log in user
+                
+                } label: {
+                    Text("Log In")
+                        .padding(.horizontal, 140)
 
-            // Sign up + Login buttons
+                        .padding(.vertical, 4)
+
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .bold()
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(Color(hex: "#11a37f"))
+                .padding(.bottom)
+            
             HStack {
-                Button("Sign Up") {
-                    print("Sign up user: \(email), \(password)")
-                    // TODO: Sign up user
-
+                Text("Don’t have an account?")
+                    .foregroundStyle(.white)
+                
+                // TODO: Navigate to sign up page
+                Button("Create an Account") {
+                    
                 }
-                .buttonStyle(.borderedProminent) // <-- Style button
-
-                Button("Login") {
-                    print("Login user: \(email), \(password)")
-                    // TODO: Login user
-
-                }
-                .buttonStyle(.bordered) // <-- Style button
+                .foregroundColor(Color(hex: "#11a37f"))
             }
         }
+        .containerRelativeFrame([.horizontal, .vertical])
+        .background(Color(hex: "#343541"))
     }
 }
 
