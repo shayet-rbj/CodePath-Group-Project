@@ -18,6 +18,9 @@
 		67522AAA2BCB0277003572B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67522AA92BCB0277003572B9 /* ContentView.swift */; };
 		67522AAC2BCB027A003572B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67522AAB2BCB027A003572B9 /* Assets.xcassets */; };
 		67522AAF2BCB027A003572B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67522AAE2BCB027A003572B9 /* Preview Assets.xcassets */; };
+		6E0EB97D2BD1865F00EB0350 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EB97C2BD1865F00EB0350 /* MessageManager.swift */; };
+		6E0EB97F2BD1869500EB0350 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EB97E2BD1869500EB0350 /* Message.swift */; };
+		6E0EB9812BD1878A00EB0350 /* MessageContentOfChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EB9802BD1878A00EB0350 /* MessageContentOfChatView.swift */; };
 		6E5094B02BD153E800E7F6F9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5094AF2BD153E800E7F6F9 /* DashboardView.swift */; };
 		6E5094B22BD15A1B00E7F6F9 /* NewChatButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5094B12BD15A1B00E7F6F9 /* NewChatButtonView.swift */; };
 		6E5094B42BD15B1600E7F6F9 /* IndividualButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5094B32BD15B1600E7F6F9 /* IndividualButtonView.swift */; };
@@ -34,6 +37,9 @@
 		67522AA92BCB0277003572B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67522AAB2BCB027A003572B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67522AAE2BCB027A003572B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E0EB97C2BD1865F00EB0350 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
+		6E0EB97E2BD1869500EB0350 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Chatter Box/Message.swift"; sourceTree = SOURCE_ROOT; };
+		6E0EB9802BD1878A00EB0350 /* MessageContentOfChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContentOfChatView.swift; sourceTree = "<group>"; };
 		6E5094AF2BD153E800E7F6F9 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		6E5094B12BD15A1B00E7F6F9 /* NewChatButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatButtonView.swift; sourceTree = "<group>"; };
 		6E5094B32BD15B1600E7F6F9 /* IndividualButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualButtonView.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 				67522AAB2BCB027A003572B9 /* Assets.xcassets */,
 				67522AAD2BCB027A003572B9 /* Preview Content */,
 				4D7213E72BD1033700287A24 /* Color.swift */,
+				6E0EB97C2BD1865F00EB0350 /* MessageManager.swift */,
 			);
 			path = "Chatter Box";
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 				6E5094B12BD15A1B00E7F6F9 /* NewChatButtonView.swift */,
 				6E5094B32BD15B1600E7F6F9 /* IndividualButtonView.swift */,
 				6E5094B52BD168A300E7F6F9 /* ChatView.swift */,
+				6E0EB9802BD1878A00EB0350 /* MessageContentOfChatView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		67A624E52BCB09FE00ACE5DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E0EB97E2BD1869500EB0350 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,12 +218,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D7213E62BD0FF0700287A24 /* LoginView.swift in Sources */,
+				6E0EB9812BD1878A00EB0350 /* MessageContentOfChatView.swift in Sources */,
 				6E5094B02BD153E800E7F6F9 /* DashboardView.swift in Sources */,
 				4D7213EC2BD1189F00287A24 /* SignUpView.swift in Sources */,
 				4D7213E82BD1033700287A24 /* Color.swift in Sources */,
 				6E5094B62BD168A300E7F6F9 /* ChatView.swift in Sources */,
 				6E5094B22BD15A1B00E7F6F9 /* NewChatButtonView.swift in Sources */,
+				6E0EB97F2BD1869500EB0350 /* Message.swift in Sources */,
 				6E5094B42BD15B1600E7F6F9 /* IndividualButtonView.swift in Sources */,
+				6E0EB97D2BD1865F00EB0350 /* MessageManager.swift in Sources */,
 				67522AAA2BCB0277003572B9 /* ContentView.swift in Sources */,
 				67522AA82BCB0277003572B9 /* Chatter_BoxApp.swift in Sources */,
 			);

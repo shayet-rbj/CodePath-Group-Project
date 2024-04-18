@@ -35,14 +35,19 @@ struct NewChatButtonView: View {
                             tag: option,
                             selection: $selectedChoice
                         ) {
-                            Text(option)
-                                .foregroundColor(.white)
-                                .padding()
+                            HStack{
+                                Image(option)
+                                Text(option)
+                                    .foregroundColor(.white)
+                                    .padding()
+                            }
                         }
                         .background(Color(hex: "#343541"))
                         .padding(.horizontal)
                         .cornerRadius(5)
                         .padding(.vertical, 5)
+                        
+                
                     }
                 }
                 .background(Color(hex: "#343541"))
@@ -55,41 +60,6 @@ struct NewChatButtonView: View {
         .edgesIgnoringSafeArea(.all)
     }
 }
-
-
-
-
-
-//struct NewChatButtonView: View {
-//    @State private var selectedChoice: String = ""
-//
-//    var body: some View {
-//                VStack {
-//                    Menu {
-//                        Text("Select Personality Type")
-//                        ForEach(["Nice", "Mean", "Sad"], id: \.self) { option in
-//                            NavigationLink(destination: ChatView(choice: option)) {
-//                                IndividualButtonView(imageName: "face.smiling", buttonText: option)
-//                            }
-//                        }
-//                    } label: {
-//                        HStack {
-//                            Image("messageBubble").resizable().frame(width: 20, height: 20)
-//                            Text("New Chat").foregroundColor(.white)
-//                            Spacer()
-//                            Image("arrowStroke").resizable().frame(width: 20, height: 20)
-//                        }
-//                        .padding()
-//                    }
-//
-//                    Rectangle().fill(Color.gray).frame(height: 2)
-//                }
-//                .background(Color(hex: "#343541"))
-//                .navigationBarTitle("", displayMode: .inline)
-//                .navigationBarHidden(true) // Hide the navigation bar if needed
-//                .edgesIgnoringSafeArea(.all)
-//    }
-//}
 
 
 

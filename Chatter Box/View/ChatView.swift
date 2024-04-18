@@ -27,8 +27,8 @@ struct ChatView: View {
             }
         }
         .navigationBarTitle("\(choice)", displayMode: .inline)
-        .navigationBarItems(leading: Image(systemName: "person"))
-        .navigationBarItems(trailing: Image("barPicture"))
+        .navigationBarItems(leading: Image(systemName: "person").foregroundColor(.white))
+        .navigationBarItems(trailing: Image("barPicture").foregroundColor(.white))
         .containerRelativeFrame([.horizontal, .vertical])
         .background(Color(hex: "#343541"))
     }

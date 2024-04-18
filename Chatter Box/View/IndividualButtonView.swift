@@ -12,7 +12,9 @@ struct IndividualButtonView: View {
     var buttonText: String
     var body: some View {
             Button(action: {
-                
+                if buttonText == "Logout"{
+                    
+                }
             }){
                 HStack{
                     Image(systemName: imageName).resizable().frame(width: 20, height: 20).tint(Color.white)
