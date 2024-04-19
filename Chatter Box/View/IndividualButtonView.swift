@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct IndividualButtonView: View {
+    @EnvironmentObject var authViewModel : AuthViewModel
     var imageName: String
     var buttonText: String
     var body: some View {
             Button(action: {
                 if buttonText == "Logout"{
-                    
+                    Task{
+                        do {
+                            try await authViewModel.logOut()
+                        } catch {}
+                    }
                 }
             }){
                 HStack{

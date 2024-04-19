@@ -11,6 +11,8 @@ struct SignUpView: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var fullname: String = ""
+    @EnvironmentObject var authViewModel: AuthViewModel
 
     var body: some View {
         NavigationStack {
@@ -26,6 +28,22 @@ struct SignUpView: View {
                 // Email + password fields
                 VStack {
                     TextField("",
+                              text: $fullname,
+                              prompt: Text("Full Name")
+                        .foregroundColor(Color(hex: "#92979f"))
+                    )
+                    .padding(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(Color(hex: "#42434d"), lineWidth: 1)
+                            .frame(height: 35)
+                    )
+                    .foregroundStyle(.white)
+                    .tint(.white)
+                    .background(Color(hex: "#42434d"))
+                    .cornerRadius(8)
+                    
+                    TextField("",
                               text: $email,
                               prompt: Text("Email")
                         .foregroundColor(Color(hex: "#92979f"))
@@ -40,6 +58,7 @@ struct SignUpView: View {
                     .tint(.white)
                     .background(Color(hex: "#42434d"))
                     .cornerRadius(8)
+                    
                     
                     SecureField("",
                                 text: $password,
@@ -61,8 +80,15 @@ struct SignUpView: View {
                 .padding(20)
                 
                 Button {
-                    print("Create and log in user: \(email), \(password)")
-                    // TODO: Log in user
+                    print("Create and sign up user: \(fullname), \(email), \(password)")
+                    // TODO: Sign up user
+                    Task{
+                        do {
+                            try await authViewModel.signUp(withEmail: email, password: password, fullname: fullname)
+                        } catch {
+                            
+                        }
+                    }
                     
                 } label: {
                     Text("Create account")

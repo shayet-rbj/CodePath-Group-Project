@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import FirebaseFirestore
 
 struct LoginView: View {
 
     @State private var email: String = ""
     @State private var password: String = ""
+    @EnvironmentObject var authViewModel: AuthViewModel
 
     var body: some View {
         NavigationStack {
@@ -63,7 +66,13 @@ struct LoginView: View {
                 Button {
                     print("Log in user: \(email), \(password)")
                     // TODO: Log in user
-                    
+                    Task{
+                        do {
+                            try await authViewModel.logIn(withEmail: email, password: password)
+                        } catch {
+                            
+                        }
+                    }
                 } label: {
                     Text("Log In")
                         .padding(.horizontal, 140)
@@ -97,4 +106,5 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
+        .environmentObject(AuthViewModel())
 }

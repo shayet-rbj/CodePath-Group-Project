@@ -10,6 +10,7 @@ import FirebaseCore
 
 @main
 struct Chatter_BoxApp: App {
+    @StateObject var authViewModel = AuthViewModel()
     
     init() { // <-- Add an init
             FirebaseApp.configure() // <-- Configure Firebase app
@@ -17,7 +18,8 @@ struct Chatter_BoxApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ContentView()
+                .environmentObject(authViewModel)
         }
     }
 }
