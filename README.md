@@ -44,13 +44,13 @@ An advanced AI-driven platform designed to simulate human-like conversations. Us
 
 ### 2. Screen Archetypes
 
-- [ ] [**Login Screen**]
+- [X] [**Login Screen**]
 * [Required User Feature: User can log in.]
 - [ ] [**Chat Screen**]
 * [Required User Feature: User can chat using a chat box ]
 * [Required User Feature: User can access past conversations (past history)]
 * [Required User Feature: User can create a new chat with a different personality]
-- [ ] [**Create Account Screen**]
+- [X] [**Create Account Screen**]
 * [Required User Feature: User can create a account.]
 
 
@@ -113,3 +113,6 @@ An advanced AI-driven platform designed to simulate human-like conversations. Us
 - [ ] [ChatScreen Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/3)
 - [ ] [Dashboard Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/4)
 
+
+## Gif Link: 
+https://imgur.com/a/5fTAmVv.gif
