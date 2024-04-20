@@ -59,20 +59,20 @@ An advanced AI-driven platform designed to simulate human-like conversations. Us
 **Tab Navigation** (Tab to Screen)
 
 
-- [ ] [First Tab, e.g., Login Screen]
-- [ ] [Second Tab, e.g., Create Account Screen]
-- [ ] [Third Tab, e.g., Chat Screen]
+- [x] [First Tab, e.g., Login Screen]
+- [x] [Second Tab, e.g., Create Account Screen]
+- [x] [Third Tab, e.g., Chat Screen]
 
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] [**Login**]
+- [x] [**Login**]
   * Leads to [**Chat Screen**]
-- [ ] [**Signup**]
+- [x] [**Signup**]
   * Leads to [**Create Account Screen**]
-- [ ] [**Create Account Screen**]
+- [x] [**Create Account Screen**]
   * Leads to [**Chat Screen**]
-- [ ] [**Chat Screen**]
+- [x] [**Chat Screen**]
   * Leads to [**Past history/Change personality**] 
 
 
@@ -109,9 +109,9 @@ An advanced AI-driven platform designed to simulate human-like conversations. Us
 ## Sprint 
 
 ### Sprint 1 
-- [ ] [Login and Signup Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/2)
-- [ ] [ChatScreen Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/3)
-- [ ] [Dashboard Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/4)
+- [x] [Login and Signup Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/2)
+- [x] [ChatScreen Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/3)
+- [x] [Dashboard Frontend](https://github.com/shayet-rbj/CodePath-Group-Project/issues/4)
 
 
 ## Gif Link: 
