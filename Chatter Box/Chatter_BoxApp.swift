@@ -13,7 +13,7 @@ struct Chatter_BoxApp: App {
     @StateObject var authViewModel = AuthViewModel()
     
     init() { // <-- Add an init
-            FirebaseApp.configure() // <-- Configure Firebase app
+        FirebaseApp.configure() // <-- Configure Firebase app
     }
     
     var body: some Scene {
