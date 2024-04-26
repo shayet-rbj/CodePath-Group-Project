@@ -13,6 +13,7 @@
 		4D7213E62BD0FF0700287A24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7213E52BD0FF0700287A24 /* LoginView.swift */; };
 		4D7213E82BD1033700287A24 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7213E72BD1033700287A24 /* Color.swift */; };
 		4D7213EC2BD1189F00287A24 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7213EB2BD1189F00287A24 /* SignUpView.swift */; };
+		4D72140C2BDC4FCE00287A24 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 4D72140B2BDC4FCE00287A24 /* OpenAI */; };
 		67522AA82BCB0277003572B9 /* Chatter_BoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67522AA72BCB0277003572B9 /* Chatter_BoxApp.swift */; };
 		67522AAA2BCB0277003572B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67522AA92BCB0277003572B9 /* ContentView.swift */; };
 		67522AAC2BCB027A003572B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67522AAB2BCB027A003572B9 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 			files = (
 				4D7213E02BD0FD4D00287A24 /* FirebaseAuth in Frameworks */,
 				4D7213E22BD0FD4D00287A24 /* FirebaseFirestore in Frameworks */,
+				4D72140C2BDC4FCE00287A24 /* OpenAI in Frameworks */,
 				4D7213E42BD0FD4D00287A24 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +166,7 @@
 				4D7213DF2BD0FD4D00287A24 /* FirebaseAuth */,
 				4D7213E12BD0FD4D00287A24 /* FirebaseFirestore */,
 				4D7213E32BD0FD4D00287A24 /* FirebaseFirestoreSwift */,
+				4D72140B2BDC4FCE00287A24 /* OpenAI */,
 			);
 			productName = "Chatter Box";
 			productReference = 67522AA42BCB0277003572B9 /* Chatter Box.app */;
@@ -195,6 +198,7 @@
 			mainGroup = 67522A9B2BCB0277003572B9;
 			packageReferences = (
 				4D7213D32BD0FD1C00287A24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4D72140A2BDC4FCE00287A24 /* XCRemoteSwiftPackageReference "OpenAI" */,
 			);
 			productRefGroup = 67522AA52BCB0277003572B9 /* Products */;
 			projectDirPath = "";
@@ -456,6 +460,14 @@
 				minimumVersion = 10.24.0;
 			};
 		};
+		4D72140A2BDC4FCE00287A24 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -473,6 +485,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4D7213D32BD0FD1C00287A24 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		4D72140B2BDC4FCE00287A24 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D72140A2BDC4FCE00287A24 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
