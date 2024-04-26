@@ -23,9 +23,15 @@ struct ChatView: View {
             ScrollView { // <-- Add ScrollView
                 VStack { // <-- Add VStack
                     ForEach(messageManager.messages) { message in
-                        MessageRow(text: message.text, isOutgoing: true /*authViewModel.currentUser?.email == message.username*/
-                        // set isOutgoing = true for preview to work.
-                        )
+                        if message.username == "gpt3_5turbo" {
+                            MessageRow(text: message.text, isOutgoing: false)
+                            // Set isOutgoing to false if chatgpt's response
+                        }
+                        else {
+                            MessageRow(text: message.text, isOutgoing: true /*authViewModel.currentUser?.email == message.username*/
+                                       // set isOutgoing = true for preview to work.
+                            )
+                        }
                     }
                 }
             }
@@ -34,6 +40,7 @@ struct ChatView: View {
                 SendMessageView { messageText in // <-- Add SendMessageView
                     // TODO: Save message to Firestore
                     messageManager.sendMessage(text: messageText, username: authViewModel.currentUser?.email ?? "")
+                    messageManager.getBotReply(choice: choice)
                 }
             }
             Spacer()
