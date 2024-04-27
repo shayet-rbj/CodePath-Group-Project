@@ -116,3 +116,6 @@ An advanced AI-driven platform designed to simulate human-like conversations. Us
 
 ## Gif Link: 
 https://imgur.com/a/5fTAmVv.gif
+
+## Video Walkthrough
+![Kapture2024-04-26at19 30 10-ezgif com-optimize](https://github.com/shayet-rbj/CodePath-Group-Project/assets/70489592/df2b654b-2ae1-48f6-ba60-21c84a8d3de7)
